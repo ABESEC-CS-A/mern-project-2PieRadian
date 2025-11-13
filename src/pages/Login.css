@@ -379,18 +379,148 @@
 @media (max-width: 768px) {
   .login-container {
     padding: 1rem;
+    min-height: calc(100vh - 80px);
   }
 
-  .login-left,
-  .login-right {
-    padding: 2rem;
+  .login-wrapper {
+    min-height: auto;
+  }
+
+  .login-left {
+    padding: 2rem 1.5rem;
+    border-right: none;
+    border-bottom: 4px solid var(--primary-yellow);
+  }
+
+  .login-badge {
+    font-size: 0.7rem;
+    padding: 0.4rem 1rem;
+    margin-bottom: 1.5rem;
   }
 
   .login-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .title-accent {
+    margin-left: 0;
+  }
+
+  .login-subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .visual-grid {
+    gap: 0.8rem;
+  }
+
+  .grid-cell {
+    border-width: 2px;
+  }
+
+  .login-right {
+    padding: 2rem 1.5rem;
+  }
+
+  .box-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .header-number {
     font-size: 2.5rem;
   }
 
   .box-header h2 {
     font-size: 2rem;
+  }
+
+  .login-form {
+    gap: 1.5rem;
+  }
+
+  .input-wrapper input {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .login-button {
+    padding: 1.2rem;
+    font-size: 1.1rem;
+  }
+
+  .login-footer {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    padding: 0.5rem;
+  }
+
+  .login-wrapper {
+    border-width: 3px;
+  }
+
+  .login-left,
+  .login-right {
+    padding: 1.5rem 1rem;
+  }
+
+  .login-title {
+    font-size: 2rem;
+  }
+
+  .login-badge {
+    font-size: 0.6rem;
+    padding: 0.3rem 0.8rem;
+  }
+
+  .visual-grid {
+    gap: 0.5rem;
+  }
+
+  .box-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .header-number {
+    font-size: 2rem;
+  }
+
+  .box-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .input-wrapper label {
+    font-size: 0.8rem;
+  }
+
+  .input-wrapper input {
+    padding: 0.9rem;
+    font-size: 0.9rem;
+  }
+
+  .login-button {
+    padding: 1rem;
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+
+  .login-footer {
+    font-size: 0.9rem;
+  }
+
+  .signup-link {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
   }
 }
